@@ -1,6 +1,5 @@
-# I used this script to get SMS notifications of offers from the Greek public train transportation system.
+# I drafted this script to get SMS notifications of offers from the Greek public train transportation system.
 # It utilises a free feature provided by the Greek mobile operator Cosmote, that when you receive an email in your Cosmote account then an SMS is sent free of chanrge to your mobile phone.
-
 
 import urllib
 import json
