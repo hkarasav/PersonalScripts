@@ -51,8 +51,6 @@ while True:
     except:
         print "Network connection problem...In 5 seconds another attempt shall be made"
         time.sleep(5)
-travel_times_d=[]
-travel_times_r=[]
 
 print "Pick travel route during transition e.g. 0,3,4"
 for trip_time in range(0,len(travel_times_read['data']['transition'])):
