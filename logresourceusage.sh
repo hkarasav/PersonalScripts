@@ -1,4 +1,5 @@
 #!/bin/bash
+# Use this file with: ./logresourceusage.sh >> logresourceusage.log &
 
 stopat=$((SECONDS+93600))
 while [ $SECONDS -lt $stopat ]
