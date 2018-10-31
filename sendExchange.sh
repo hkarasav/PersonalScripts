@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Set a new crontab job to run every 01:00 AM each day:
+# 0 1 * * * /home/babis/sendCryptopia.sh >> /home/babis/sendCryptopia.log 2>&1
+
 set -e
 
 echo "---------------------------------------------------"
