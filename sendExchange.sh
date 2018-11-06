@@ -9,12 +9,12 @@ echo "---------------------------------------------------"
 
 balance=`~/innova-cli getbalance`
 margintosend=1005
-echo margintosend=$margintosend
+echo margintosend=${margintosend}
 
 currentbalance=`echo "${balance:0:4}"`
-echo currentbalance=$currentbalance
-innovatotransfer=`expr $currentbalance - $margintosend`
-echo innovatotransfer=$innovatotransfer
+echo currentbalance=${currentbalance}
+innovatotransfer=`echo $(( $currentbalance - $margintosend ))`
+echo innovatotransfer=${innovatotransfer}
 
 if [ ${innovatotransfer} -gt 40 ]
 then
